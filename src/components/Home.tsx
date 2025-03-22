@@ -7,7 +7,7 @@ const Home = () => {
   const [shows, setShows] = useState<Show[]>([]);
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const showsPerPage = 5; // Set how many shows to display per page
+  const showsPerPage = 10; // Set how many shows to display per page
 
   useEffect(() => {
     fetchShows(1).then(setShows).catch(console.error); // Pass default page 1
